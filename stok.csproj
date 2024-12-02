@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{347428F1-B7FD-4385-B7FA-8DAEC754F96F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>stok</RootNamespace>
+    <AssemblyName>stok</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="animasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="animasyon.Designer.cs">
+      <DependentUpon>animasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="arge_stok.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arge_stok.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="contolsiparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contolsiparis.Designer.cs">
+      <DependentUpon>contolsiparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlPanel.Designer.cs">
+      <DependentUpon>ControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElipseControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmadmin.Designer.cs">
+      <DependentUpon>frmadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmstok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstok.Designer.cs">
+      <DependentUpon>frmstok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Girisfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Girisfrm.Designer.cs">
+      <DependentUpon>Girisfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Siparisistekleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Siparisistekleri.Designer.cs">
+      <DependentUpon>Siparisistekleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="siparisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="siparisler.Designer.cs">
+      <DependentUpon>siparisler.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="animasyon.resx">
+      <DependentUpon>animasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contolsiparis.resx">
+      <DependentUpon>contolsiparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlPanel.resx">
+      <DependentUpon>ControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmadmin.resx">
+      <DependentUpon>frmadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstok.resx">
+      <DependentUpon>frmstok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Girisfrm.resx">
+      <DependentUpon>Girisfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Siparisistekleri.resx">
+      <DependentUpon>Siparisistekleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="siparisler.resx">
+      <DependentUpon>siparisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="arge_stok.xsc">
+      <DependentUpon>arge_stok.xsd</DependentUpon>
+    </None>
+    <None Include="arge_stok.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arge_stok.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arge_stok.xss">
+      <DependentUpon>arge_stok.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control-system...ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\access-control.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\friends.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gentek-100-final-c4b67b6b-7082-49b9-895c-765270758070.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gentek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1516884267312.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gentek1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stocks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkout %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pcb-board.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recycling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-management-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-management-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
